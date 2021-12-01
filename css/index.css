@@ -1,0 +1,268 @@
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    color: #666;
+    line-height: 1.5;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+img,
+a {
+    -webkit-touch-callout: none;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+div {
+    /* css3 box model */
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    line-height: 0;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+.app {
+    height: 45px;
+}
+
+.app ul li {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    background-color: #001C4F;
+    text-align: center;
+    color: #fff;
+}
+
+.app ul li:nth-child(1) {
+    width: 8%;
+}
+
+.app ul li:nth-child(1) img {
+    width: 10px;
+}
+
+.app ul li:nth-child(2) {
+    width: 10%;
+}
+
+.app ul li:nth-child(2) img {
+    width: 35px;
+    vertical-align: middle;
+}
+
+.app ul li:nth-child(3) {
+    width: 57%;
+}
+
+.app ul li:nth-child(3) span{
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 1.0;
+    vertical-align: middle;
+    text-align: left;
+    /* font-size: 12px; */
+}
+
+.app ul li:nth-child(4) {
+    width: 25%;
+    background-color: #C5E6F9;
+    color: #333333;
+}
+
+
+/* Search Bar */
+
+.search-wrap {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 44px;
+    min-width: 320px;
+    max-width: 640px;
+}
+
+.search-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 44px;
+}
+
+.search-btn::before {
+    content: "";
+    display: block;
+    top:0;
+    width: 20px;
+    height: 18px;
+    background: url(../images/s-btn.png) no-repeat;
+    background-size: 20px 18px;
+    margin: 14px 0 0 10px;
+}
+
+.search-login {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55px;
+    height: 44px;
+    color: #fff;
+    line-height: 44px;
+    text-align: center;
+}
+
+.search {
+    position: relative;
+    height: 30px;
+    background-color: #fff;
+    margin: 0 55px 0 35px;
+    border-radius: 15px;
+    margin-top: 7px;
+}
+
+.ebay-icon {
+    width: 37px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    left: 13px;
+    background: url(../images/ebay.svg) no-repeat;
+    background-size: 37px 15px;
+}
+
+.ebay-icon::after {
+    content: "";
+    position: absolute;
+    right: -2px;
+    top: 0;
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+}
+
+.search-icon {
+    position: absolute;
+    top: 8px;
+    left: 52px;
+    width: 18px;
+    height: 15px;
+    background: url(../images/jd-sprites.png) no-repeat -81px 0;
+    background-size: 200px auto;
+}
+
+/* Banner */
+.slider img {
+    width: 100%;
+}
+
+
+/* Holiday Deal */
+
+.brand {
+    overflow: hidden;
+}
+
+.brand div {
+    float: left;
+    width: 33.33%;
+}
+
+.brand div img {
+    width: 100%;
+}
+
+
+/* Navigation(Categories) */
+
+nav {
+    padding-top: 5px;
+}
+
+nav a {
+    float: left;
+    width: 20%;
+    height: 80px;
+    text-align: center;
+}
+
+nav a img {
+    width: 40px; /* 先写死，后面再调，用rem更好 */
+    margin: 10px 0;
+}
+
+nav a span {
+    display: block;
+    margin: 0 5px;
+    line-height: 1.0;
+    font-size: 12px;
+}
+
+
+/* news */
+
+.news {
+    margin-top: 20px;
+}
+
+.news img {
+    width: 100%;
+}
+
+.news a {
+    float: left;
+    box-sizing: border-box;
+}
+
+.news a:nth-child(1) {
+    width: 50%;
+}
+
+
+/* .news a:nth-child(2),
+.news a:nth-child(3),
+{
+    width: 25%;
+} */
+
+
+.news a:nth-child(n+2) {
+    width: 25%;
+    /* border-left: 1px solid #ccc; */
+}
+
+
+/* .news a:nth-child(3) {
+    width: 25%;
+} */
